@@ -1,0 +1,68 @@
+html {
+    background-color: #272727;
+}
+
+
+body{ /*setting basic view for ALL page*/
+    font-size:16px;
+    font-family: 'Inter', sans-serif;   
+    color: #ececec;
+    /* background-color: #272727; */
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border: 2px solid #88A3EC
+
+}
+
+img { /*setting basic view for ALL images*/
+    display: block;
+    width: 800px;
+    margin: 0 auto
+}
+
+
+/*setting basic style for ALL links*/
+a { 
+    color: #ececec
+}
+a:hover {
+    color: #88A3EC
+}
+
+
+
+
+
+
+h1 { /* Adding advanced style for main h */
+    font-size: 50px;
+    font-family: 'Rubik Mono One', sans-serif;
+    text-align:center;
+    margin: 10px 0;
+    padding: 20px 20px 20px 20px;
+    background-color:#ececec;
+    color: #131313;
+}
+
+
+h2 { /*adding advanced style for h2*/
+    font-size: 30;
+    font-family: 'Inter', sans-serif; 
+    text-align:center; 
+}
+
+p, li {
+    text-shadow: 3px 2px 15px #88a3ec94
+}
+
+li{
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+
+button{
+    margin: 10px  0px;
+}

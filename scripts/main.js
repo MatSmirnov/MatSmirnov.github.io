@@ -1,3 +1,5 @@
+
+// Переключение картинок 
 let myImage = document.querySelector('img');
 
 myImage.onclick = function() {
@@ -9,7 +11,7 @@ myImage.onclick = function() {
     }
 } 
 
-
+// Базовая идентефикация на сайте
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
 
@@ -35,12 +37,12 @@ myButton.onclick = function() {
 }
 
 
+// Автоматически дополняющийся список
 
 const list = document.createElement('ul');
 const info = document.createElement('p');
 const button = document.getElementById('newElementButton');
 
-// info.textContent = 'Below is a dynamic list. Click anywhere on the page to add a new list item. Click an existing list item to change its text to something else.';
 
 document.body.appendChild(info);
 document.body.appendChild(list);
@@ -57,3 +59,15 @@ button.onclick = function() {
     this.textContent = listContent;
   }
 }
+
+// Плавный скролл "#" сылок (не работает)
+
+$('a[href^="#"').on('click', function() {
+
+    let href = $(this).attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    });
+    return false;
+});

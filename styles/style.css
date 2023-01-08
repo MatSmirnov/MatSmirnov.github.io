@@ -21,6 +21,15 @@ img { /*setting basic view for ALL images*/
     margin: 0 auto
 }
 
+.socialMediaPic {
+    display: block; 
+    float: inline-start;
+    height: 20px;
+    width: 20px;
+    margin: 4px auto;
+    align-self: left;
+
+}
 
 /*setting basic style for ALL links*/
 a { 

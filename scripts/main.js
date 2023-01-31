@@ -62,7 +62,7 @@ button.onclick = function() {
 
 // Плавный скролл "#" сылок (не работает)
 
-$('a[href^="#"').on('click', function() {
+$('a[href^="#"]').on('click', function() {
 
     let href = $(this).attr('href');
 
@@ -71,3 +71,17 @@ $('a[href^="#"').on('click', function() {
     });
     return false;
 });
+
+// плавный скролл на чистом JS (тоже не работает)
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};

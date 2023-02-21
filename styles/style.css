@@ -1,6 +1,6 @@
 html {
     background-color: #272727;
-   
+    background-image: url("images/grain.png");
 }
 
 
@@ -53,7 +53,6 @@ h1 { /* Adding advanced style for main h */
     padding: 20px 20px 20px 20px;
     background-color:#ececec;
     color: #131313;
-    background-image: url("images/grain.png");
 }
 
 

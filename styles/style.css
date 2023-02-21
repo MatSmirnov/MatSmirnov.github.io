@@ -1,5 +1,6 @@
 html {
     background-color: #272727;
+   
 }
 
 
@@ -22,7 +23,7 @@ img { /*setting basic view for ALL images*/
 }
 
 .socialMediaPic {
-    display: block; 
+    display: block;
     float: inline-start;
     height: 20px;
     width: 20px;
@@ -52,6 +53,7 @@ h1 { /* Adding advanced style for main h */
     padding: 20px 20px 20px 20px;
     background-color:#ececec;
     color: #131313;
+    background-image: url("images/grain.png");
 }
 
 
